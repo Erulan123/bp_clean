@@ -98,8 +98,7 @@ pip install -r requirements_s.txt
 
 **Data.** `data/raw/`, `data/processed/all_markets.jsonl`, `filtered_crypto_markets.jsonl`,
 and `markets.db` are not shipped in the repository -- they're large, and a persistent
-storage setup for the pipeline hasn't been settled on yet. Get in touch and the files
-you need will be shared directly.
+storage setup for the pipeline hasn't been settled on yet. I could share a link where they are stored.
 
 **To see the dashboard** You only need `markets.db` (386MB) -- neither
 `app.py` nor `popularity_metrics.ipynb` touch the raw JSONL files.
@@ -176,4 +175,4 @@ auto-generated 5-minute markets) and still pale on color if each one barely trad
 - A few known, accepted false positives remain by design, where a coin's name collides
   with a real person/team/title (an NHL team named Avalanche, a Valorant team named
   Bonk, the movie *Tron: Ares*) -- judged not worth special-cased logic for the small
-  number of markets involved.
+  number of markets involved. But need corrention in the future.
