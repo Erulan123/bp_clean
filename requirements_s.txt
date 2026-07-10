@@ -1,2 +1,8 @@
 pandas
 requests
+ipykernel
+pyahocorasick # enables the fast path automatically
+matplotlib
+seaborn
+streamlit
+plotly

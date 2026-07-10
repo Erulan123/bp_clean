@@ -1,0 +1,1 @@
+{"status": "open", "run_id": 1, "first_started_at": "2026-07-08T07:41:56.450874+00:00", "checkpoint_started_at": "2026-07-08T07:41:55.287804+00:00", "checkpoint_written_at": "2026-07-08T07:44:52.739913+00:00", "chunk_index": 1, "lines_in_chunk": 52033, "next_cursor": null, "fetched_this_run": 52033, "total_fetched": 52033, "done": true}

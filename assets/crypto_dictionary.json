@@ -1,0 +1,887 @@
+{
+  "_meta": {
+    "description": "Curated coin dictionary for src/filtering/keyword_filter.py. Each coin lists the full name(s) and safe (unambiguous) ticker(s) that identify it in a market's slug/question. Coins whose common name or ticker collides with an ordinary English word, a person's name, or another well-known non-crypto term (TRUMP, TON, LINK-as-word, OP, MAKER-as-word, ...) are deliberately left out of matching rather than special-cased -- a market about them may simply be missed, which is an accepted trade-off, not a bug.",
+    "matching_rules": {
+      "names": "matched case-insensitively, on word boundaries, against the market slug and (as a fallback) the question text.",
+      "tickers": "matched case-insensitively as a whole token against the slug (slugs are already lowercase, so there's no case signal to check). Against the question text, tickers must appear in ALL CAPS on a word boundary -- this is what stops a ticker like SOL from matching a lowercase/mixed-case word or name in ordinary prose."
+    }
+  },
+  "coins": [
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "names": [
+        "bitcoin"
+      ],
+      "tickers": [
+        "BTC"
+      ]
+    },
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "names": [
+        "ethereum",
+        "ether"
+      ],
+      "tickers": [
+        "ETH"
+      ]
+    },
+    {
+      "id": "solana",
+      "name": "Solana",
+      "names": [
+        "solana"
+      ],
+      "tickers": [
+        "SOL"
+      ]
+    },
+    {
+      "id": "ripple",
+      "name": "XRP",
+      "names": [
+        "ripple"
+      ],
+      "tickers": [
+        "XRP"
+      ]
+    },
+    {
+      "id": "binancecoin",
+      "name": "BNB",
+      "names": [
+        "binance coin",
+        "binancecoin"
+      ],
+      "tickers": [
+        "BNB"
+      ]
+    },
+    {
+      "id": "dogecoin",
+      "name": "Dogecoin",
+      "names": [
+        "dogecoin"
+      ],
+      "tickers": [
+        "DOGE"
+      ]
+    },
+    {
+      "id": "hyperliquid",
+      "name": "Hyperliquid",
+      "names": [
+        "hyperliquid"
+      ],
+      "tickers": [
+        "HYPE"
+      ]
+    },
+    {
+      "id": "cardano",
+      "name": "Cardano",
+      "names": [
+        "cardano"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "litecoin",
+      "name": "Litecoin",
+      "names": [
+        "litecoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "polkadot",
+      "name": "Polkadot",
+      "names": [
+        "polkadot"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "chainlink",
+      "name": "Chainlink",
+      "names": [
+        "chainlink"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "matic-network",
+      "name": "Polygon",
+      "names": [
+        "polygon"
+      ],
+      "tickers": [
+        "MATIC"
+      ]
+    },
+    {
+      "id": "shiba-inu",
+      "name": "Shiba Inu",
+      "names": [
+        "shiba inu",
+        "shiba"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "internet-computer",
+      "name": "Internet Computer",
+      "names": [
+        "internet computer"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "cosmos",
+      "name": "Cosmos",
+      "names": [
+        "cosmos"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "stellar",
+      "name": "Stellar",
+      "names": [
+        "stellar"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "monero",
+      "name": "Monero",
+      "names": [
+        "monero"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "ethereum-classic",
+      "name": "Ethereum Classic",
+      "names": [
+        "ethereum classic"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "bitcoin-cash",
+      "name": "Bitcoin Cash",
+      "names": [
+        "bitcoin cash"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "filecoin",
+      "name": "Filecoin",
+      "names": [
+        "filecoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "hedera-hashgraph",
+      "name": "Hedera",
+      "names": [
+        "hedera"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "vechain",
+      "name": "VeChain",
+      "names": [
+        "vechain"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "algorand",
+      "name": "Algorand",
+      "names": [
+        "algorand"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "the-graph",
+      "name": "The Graph",
+      "names": [
+        "the graph"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "names": [
+        "aave"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "lido-dao",
+      "name": "Lido DAO",
+      "names": [
+        "lido"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "uniswap",
+      "name": "Uniswap",
+      "names": [
+        "uniswap"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "arbitrum",
+      "name": "Arbitrum",
+      "names": [
+        "arbitrum"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "injective-protocol",
+      "name": "Injective",
+      "names": [
+        "injective"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "near",
+      "name": "NEAR Protocol",
+      "names": [
+        "near protocol"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "aptos",
+      "name": "Aptos",
+      "names": [
+        "aptos"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "tezos",
+      "name": "Tezos",
+      "names": [
+        "tezos"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "curve-dao-token",
+      "name": "Curve DAO",
+      "names": [
+        "curve dao"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "synthetix-network-token",
+      "name": "Synthetix",
+      "names": [
+        "synthetix"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "ens",
+      "name": "Ethereum Name Service",
+      "names": [
+        "ethereum name service"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "dydx",
+      "name": "dYdX",
+      "names": [
+        "dydx"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "kava",
+      "name": "Kava",
+      "names": [
+        "kava"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "elrond-erd-2",
+      "name": "MultiversX",
+      "names": [
+        "multiversx"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "chiliz",
+      "name": "Chiliz",
+      "names": [
+        "chiliz"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "iota",
+      "name": "IOTA",
+      "names": [],
+      "tickers": [
+        "MIOTA"
+      ]
+    },
+    {
+      "id": "qtum",
+      "name": "Qtum",
+      "names": [
+        "qtum"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "decred",
+      "name": "Decred",
+      "names": [
+        "decred"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "ravencoin",
+      "name": "Ravencoin",
+      "names": [
+        "ravencoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "basic-attention-token",
+      "name": "Basic Attention Token",
+      "names": [
+        "basic attention token"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "kyber-network-crystal",
+      "name": "Kyber Network",
+      "names": [
+        "kyber network"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "storj",
+      "name": "Storj",
+      "names": [
+        "storj"
+      ],
+      "tickers": [
+        "STORJ"
+      ]
+    },
+    {
+      "id": "ankr",
+      "name": "Ankr",
+      "names": [
+        "ankr"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "fetch-ai",
+      "name": "Fetch.ai",
+      "names": [
+        "fetch.ai",
+        "fetch ai"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "singularitynet",
+      "name": "SingularityNET",
+      "names": [
+        "singularitynet"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "band-protocol",
+      "name": "Band Protocol",
+      "names": [
+        "band protocol"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "perpetual-protocol",
+      "name": "Perpetual Protocol",
+      "names": [
+        "perpetual protocol"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "raydium",
+      "name": "Raydium",
+      "names": [
+        "raydium"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "pyth-network",
+      "name": "Pyth Network",
+      "names": [
+        "pyth network",
+        "pyth"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "dogwifcoin",
+      "name": "dogwifhat",
+      "names": [
+        "dogwifhat"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "floki",
+      "name": "Floki",
+      "names": [
+        "floki"
+      ],
+      "tickers": [
+        "FLOKI"
+      ]
+    },
+    {
+      "id": "worldcoin-wld",
+      "name": "Worldcoin",
+      "names": [
+        "worldcoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "immutable-x",
+      "name": "Immutable",
+      "names": [
+        "immutable x",
+        "immutable"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "theta-token",
+      "name": "Theta Network",
+      "names": [
+        "theta network"
+      ],
+      "tickers": [
+        "THETA"
+      ]
+    },
+    {
+      "id": "the-sandbox",
+      "name": "The Sandbox",
+      "names": [
+        "the sandbox"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "decentraland",
+      "name": "Decentraland",
+      "names": [
+        "decentraland"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "apecoin",
+      "name": "ApeCoin",
+      "names": [
+        "apecoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "thorchain",
+      "name": "THORChain",
+      "names": [
+        "thorchain"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "kaspa",
+      "name": "Kaspa",
+      "names": [
+        "kaspa"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "bittensor",
+      "name": "Bittensor",
+      "names": [
+        "bittensor"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "render-token",
+      "name": "Render",
+      "names": [
+        "render"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "the-open-network",
+      "name": "Toncoin",
+      "names": [
+        "toncoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "tether",
+      "name": "Tether",
+      "names": [
+        "tether"
+      ],
+      "tickers": [
+        "USDT"
+      ]
+    },
+    {
+      "id": "usd-coin",
+      "name": "USD Coin",
+      "names": [
+        "usd coin"
+      ],
+      "tickers": [
+        "USDC"
+      ]
+    },
+    {
+      "id": "leo-token",
+      "name": "LEO Token",
+      "names": [
+        "leo token"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "wrapped-bitcoin",
+      "name": "Wrapped Bitcoin",
+      "names": [
+        "wrapped bitcoin"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "crypto-com-chain",
+      "name": "Cronos",
+      "names": [
+        "cronos"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "mantle",
+      "name": "Mantle",
+      "names": [
+        "mantle"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "celestia",
+      "name": "Celestia",
+      "names": [
+        "celestia"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "starknet",
+      "name": "Starknet",
+      "names": [
+        "starknet"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "zksync",
+      "name": "zkSync",
+      "names": [
+        "zksync"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "ondo-finance",
+      "name": "Ondo",
+      "names": [
+        "ondo finance"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "ethena",
+      "name": "Ethena",
+      "names": [
+        "ethena"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "fantom",
+      "name": "Fantom",
+      "names": [
+        "fantom"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "helium",
+      "name": "Helium",
+      "names": [
+        "helium"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "zcash",
+      "name": "Zcash",
+      "names": [
+        "zcash"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "zilliqa",
+      "name": "Zilliqa",
+      "names": [
+        "zilliqa"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "celo",
+      "name": "Celo",
+      "names": [
+        "celo"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "moonbeam",
+      "name": "Moonbeam",
+      "names": [
+        "moonbeam"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "conflux-token",
+      "name": "Conflux",
+      "names": [
+        "conflux"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "rocket-pool",
+      "name": "Rocket Pool",
+      "names": [
+        "rocket pool"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "pancakeswap-token",
+      "name": "PancakeSwap",
+      "names": [
+        "pancakeswap"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "1inch",
+      "name": "1inch",
+      "names": [
+        "1inch"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "axie-infinity",
+      "name": "Axie Infinity",
+      "names": [
+        "axie infinity"
+      ],
+      "tickers": []
+    },
+    {
+      "id": "gmt-token",
+      "name": "STEPN",
+      "names": [
+        "stepn"
+      ],
+      "tickers": []
+    }
+  ],
+  "_documented_exclusions": {
+    "description": "Terms deliberately kept out of matching because they collide with common English words, names, or other well-known non-crypto terms. Not used by the filter -- purely so a future maintainer doesn't 're-discover' and re-add these by accident.",
+    "excluded_tickers": [
+      "TRUMP",
+      "TON",
+      "OP",
+      "LINK",
+      "POL",
+      "MAKER",
+      "ATOM (as a bare English word, only matched via name 'cosmos')",
+      "NEAR",
+      "APT",
+      "S",
+      "T",
+      "AI",
+      "GO",
+      "TIME",
+      "MASK",
+      "RARE",
+      "WIN",
+      "ID",
+      "FOR",
+      "ARK",
+      "SUN",
+      "JOE",
+      "MAGA",
+      "PNUT",
+      "FLOW",
+      "APE",
+      "PEOPLE",
+      "TURBO",
+      "CREAM",
+      "BTT",
+      "ENS",
+      "PENGU",
+      "GALA",
+      "DASH",
+      "WAVES",
+      "NEO",
+      "ENA (name collision risk, only matched via name 'ethena')",
+      "MOVE (common English word)",
+      "AAVE",
+      "AGIX",
+      "ALGO",
+      "ANKR",
+      "ARB",
+      "AVAX",
+      "AXS",
+      "BAND",
+      "BAT",
+      "BCH",
+      "BLUR",
+      "BONK",
+      "CAKE",
+      "CELO",
+      "CFX",
+      "CHZ",
+      "COMP",
+      "CRO",
+      "CRV",
+      "DAI",
+      "DCR",
+      "DOT",
+      "EGLD",
+      "EOS",
+      "ETC",
+      "FET",
+      "FIL",
+      "FTM",
+      "GLMR",
+      "GMX",
+      "GRT",
+      "HBAR",
+      "HNT",
+      "ICP",
+      "IMX",
+      "INJ",
+      "IOTA",
+      "JUP",
+      "KAS",
+      "KAVA",
+      "KNC",
+      "LDO",
+      "LTC",
+      "MANA",
+      "MKR",
+      "MNT",
+      "OKB",
+      "ONDO",
+      "PEPE",
+      "PERP",
+      "PYTH",
+      "QNT",
+      "QTUM",
+      "RAY",
+      "RNDR",
+      "RPL",
+      "RUNE",
+      "RVN",
+      "SEI",
+      "SHIB",
+      "SNX",
+      "STRK",
+      "STX",
+      "SUI",
+      "TAO",
+      "TIA",
+      "TRX",
+      "UMA",
+      "UNI",
+      "VET",
+      "WBTC",
+      "WIF",
+      "WLD",
+      "XBT",
+      "XLM",
+      "XMR",
+      "XTZ",
+      "ZEC",
+      "ZIL",
+      "ZRX"
+    ],
+    "excluded_names": [
+      "optimism (common English word)",
+      "official-trump / trump (political, not crypto)"
+    ],
+    "excluded_coins": [
+      "avalanche-2 (name \"avalanche\" is >97% the Colorado Avalanche NHL team + a Dota2 team; found 0 genuine AVAX markets in a 1.7M-market test run)",
+      "bonk (name \"bonk\" is a Valorant esports team in 99/102 test hits; only 3 genuine BONK markets)",
+      "tron (name \"tron\" is a 2026 movie, \"Tron: Ares\", in 13/13 test hits; 0 genuine TRX markets found)"
+    ]
+  }
+}

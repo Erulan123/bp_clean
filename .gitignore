@@ -1,2 +1,7 @@
 .bpenv/
 data/
+tests/
+docs/
+archives/
+__pycache__/
+*.py[cod]
